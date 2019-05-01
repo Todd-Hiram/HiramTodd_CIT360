@@ -7,10 +7,15 @@
 package Collections;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
-import java.util.HashMap;
+import java.util.Iterator;
 import java.util.LinkedHashMap;
+import java.util.LinkedList;
 import java.util.Map;
+import java.util.Queue;
+import java.util.Set;
+import java.util.TreeSet;
 
 /**
  *
@@ -19,42 +24,108 @@ import java.util.Map;
 public class javaCollections {
     public static void main(String[] args) {
         // List collection
-        /*
-        Also occasionally called a sequence, this is an ordered list that can
-        contain duplicate elements and allows control over where the elements
-        can be insserted and can be accessed using integer indexing.
-        */
+        /*******************************************************************
+         * Also occasionally called a sequence, this is an ordered list that can
+         * contain duplicate elements and allows control over where the elements
+         * can be inserted and can be accessed using integer indexing.
+         *******************************************************************/
         System.out.println("\n List Collection Example");
         System.out.println("\n List of favorite destinations: ");
         List<String> funList = new ArrayList<>();
         funList.add("Disneyland");
-        funList.add("Laguna Beach");
-        funList.add("Chiang Mai");
-        funList.add("New York City");
-        funList.add("Tokyo");
+        funList.add("\n Laguna Beach");
+        funList.add("\n Chiang Mai");
+        funList.add("\n New York City");
+        funList.add("\n Tokyo");
         System.out.println(funList);
         
         // Map Collection
-        /*
-        Map is an object that maps keys to values. One key, one value. 
-        There is no duplicating.        
-        */
-        System.out.println("\n Map Collection Example: ");
+        /*******************************************************************
+         * Map is an object that maps keys to values. One key, one value. 
+         * There is no duplicating.
+         *******************************************************************/
+        System.out.println("\n Map Collection Example");
         System.out.println("\n Names with Nicknames: ");
         Map<String, String> mapNickNames = new LinkedHashMap<>();
         mapNickNames.put("Peter", "Preisthood");
-        mapNickNames.put("Michael", "Mickey");
-        mapNickNames.put("Francis", "Egghead");
-        mapNickNames.put("Oliver", "Olie");
-        mapNickNames.put("Julian", "Julie");
-        mapNickNames.put("Stewart", "Stu");
-        mapNickNames.put("Logan", "Rogain");
+        mapNickNames.put("\n Michael", "Mickey");
+        mapNickNames.put("\n Francis", "Egghead");
+        mapNickNames.put("\n Oliver", "Olie");
+        mapNickNames.put("\n Julian", "Julie");
+        mapNickNames.put("\n Stewart", "Stu");
+        mapNickNames.put("\n Logan", "Rogain");
         System.out.println(mapNickNames);
         
-        // Tree Collection
-        /*
-        */
-        System.out.println("\n Tree Collection Example");
-        System.out.println("\n ");
-    }
+        // TreeSet Collection
+        /*******************************************************************
+         * TreeSet provides good storage in sorted and ascending order. 
+         * The elements are also sorted by keys (indexing).
+         *******************************************************************/
+        System.out.println("TreeSet Collection Example");
+        System.out.println("Classic Disney characters: ");
+        TreeSet DisneyChar = new TreeSet();
+        DisneyChar.add("\n Mickey Mouse");
+        DisneyChar.add("\n Minnie Mouse");
+        DisneyChar.add("\n Donald Duck");
+        DisneyChar.add("\n Daisy Duck");
+        DisneyChar.add("\n Goofy");
+        DisneyChar.add("\n Pluto");
+        
+        Iterator list = DisneyChar.iterator();
+        while(list.hasNext()) {
+        Object element = list.next();
+        System.out.print(element + "\n");
+        }
+        
+        // Set deonstration using HashSet
+        /*******************************************************************
+        * Set is an unordered collection of objects and duplicates are not seen.
+        *******************************************************************/
+        System.out.println("Set Collection Example");
+        System.out.print("Set output without the duplicates: "); 
+        
+        Set<String> setCol = new HashSet<String>(); 
+        setCol.add("\n Alabama"); 
+        setCol.add("\n Colorado"); 
+        setCol.add("\n Phoenix"); 
+        setCol.add("\n Idaho"); 
+        setCol.add("\n Colorado"); 
+  
+        System.out.println(setCol); 
+  
+        // Set using TreeSet 
+        System.out.print("Set sorted using TreeSet: "); 
+        Set<String> tree_Set = new TreeSet<String>(setCol); 
+        System.out.println(tree_Set);
+        
+        // Queue deonstration using HashSet
+        /*******************************************************************
+        * Queue collection holds the elements that will soon be processed and 
+        * also provides other operations such as Insert, Remove, and Examine.
+        *******************************************************************/
+            Queue<Integer> q = new LinkedList<>(); 
+  
+            // Adds elements {0, 1, 2, 3, 4} to queue 
+            for (int i=0; i<=10; i++) 
+            q.add(i); 
+
+            // Display contents of the queue. 
+            System.out.println("Queued values: "+q); 
+
+            // To remove the head of queue. 
+            int remVal = q.remove(); 
+            System.out.println("Values removed: " + remVal); 
+
+            System.out.println(q); 
+
+            // To view the head of queue 
+            int headVal = q.peek(); 
+            System.out.println("head of queue: " + headVal); 
+
+            // Rest all methods of collection interface, 
+            // Like size and contains can be used with this 
+            // implementation.
+            int size = q.size(); 
+            System.out.println("Queue size: " + size); 
+   }
 }
