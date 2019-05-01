@@ -103,29 +103,27 @@ public class javaCollections {
         * Queue collection holds the elements that will soon be processed and 
         * also provides other operations such as Insert, Remove, and Examine.
         *******************************************************************/
-            Queue<Integer> q = new LinkedList<>(); 
+        Queue<Integer> q = new LinkedList<>(); 
   
-            // Adds elements {0, 1, 2, 3, 4} to queue 
-            for (int i=0; i<=10; i++) 
-            q.add(i); 
+        // Adds elements to queue 
+        for (int i=0; i<=10; i++) 
+        q.add(i); 
 
-            // Display contents of the queue. 
-            System.out.println("Queued values: "+q); 
+        // Display the queue. 
+        System.out.println("Queued values: "+q); 
 
-            // To remove the head of queue. 
-            int remVal = q.remove(); 
-            System.out.println("Values removed: " + remVal); 
+        // Remove the beginning value. 
+        int remVal = q.remove(); 
+        System.out.println("Values removed: " + remVal); 
 
-            System.out.println(q); 
+        System.out.println(q); 
 
-            // To view the head of queue 
-            int headVal = q.peek(); 
-            System.out.println("head of queue: " + headVal); 
+        // View the head of queue 
+        int headVal = q.peek(); 
+        System.out.println("Head of queue: " + headVal); 
 
-            // Rest all methods of collection interface, 
-            // Like size and contains can be used with this 
-            // implementation.
-            int size = q.size(); 
-            System.out.println("Queue size: " + size); 
+        // Display the number or size of queue.
+        int size = q.size(); 
+        System.out.println("Queue size: " + size); 
    }
 }
