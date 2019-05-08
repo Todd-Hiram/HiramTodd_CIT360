@@ -20,7 +20,7 @@ public class Model {
     /****************************************************************************
     * The Model of the MVC represents an object that contains data for an 
     * application. This part of the architecture handles the data and the business
-    * logic for the program. When a user submits a question, the Contoller 
+    * logic for the program. When a user submits a question, the Controller 
     * contacts the Model with the appropriate data and brings the data to the 
     * view of the user.
     *****************************************************************************/
