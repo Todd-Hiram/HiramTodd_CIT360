@@ -23,7 +23,15 @@ public class Controller {
         this.theView.addCalculateListener(new CalculateListener());
     }
 
-/* The Controller, with the help of the Event Listeners,   */
+    /****************************************************************************
+    * The Controller, with the help of the Event Listeners, processes the user's 
+    * request and passes the data between the Model, which contains the
+    * data of the application, and the View, which displays the information to the 
+    * user who is requesting whatever formation the application is programmed to 
+    * display. In short, the Controller controls the data flow of the 
+    * application's Model and updates the View when the data changes.
+    *****************************************************************************/
+    
     class CalculateListener implements ActionListener {
         
         public void actionPerformed(ActionEvent arg0) {
@@ -32,11 +40,11 @@ public class Controller {
                 firstNum = theView.getFirstNum();
                 secondNum = theView.getSecondNum();
                 
-                theModel.addTwoNum(firstNum, secondNum);
+                theModel.multiplyTwoNum(firstNum, secondNum);
                 
                 theView.setCalcTotal(theModel.getCalcValue());
             } catch(NumberFormatException ex) {
-                theView.displayErrorMessage("Need to Enter two values!");
+                theView.displayErrorMessage("Need to Enter at least two values!");
             }
         }
     }
