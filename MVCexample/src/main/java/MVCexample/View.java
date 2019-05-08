@@ -19,7 +19,7 @@ import javax.swing.JTextField;
  */
 public class View extends JFrame {
     private JTextField firstNum = new JTextField(10);
-    private JLabel addLabel = new JLabel("+");
+    private JLabel addLabel = new JLabel("*");
     private JTextField secondNum = new JTextField(10);
     private JButton calcButton = new JButton("Calculate");
     private JTextField calcTotal = new JTextField(10);
