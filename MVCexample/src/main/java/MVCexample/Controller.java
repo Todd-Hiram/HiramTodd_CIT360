@@ -44,7 +44,7 @@ public class Controller {
                 
                 theView.setCalcTotal(theModel.getCalcValue());
             } catch(NumberFormatException ex) {
-                theView.displayErrorMessage("Need to Enter at least two values!");
+                theView.displayErrorMessage("Need to Enter at least two values for the program to work!");
             }
         }
     }
