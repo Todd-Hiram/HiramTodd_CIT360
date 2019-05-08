@@ -11,7 +11,7 @@ import java.awt.event.ActionListener;
 /*
  *
  * @author hiramtodd
- */
+*/
 public class Controller {
     private View theView;
     private Model theModel;
