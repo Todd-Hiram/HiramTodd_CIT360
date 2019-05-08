@@ -38,6 +38,7 @@ public class View extends JFrame {
         
         this.add(calcPanel);
     }
+    
     /***************************************************************************
      *The View, with the help of the Controller, displays the data that the user 
      * requests. If the user requests certain information that the application is 
@@ -45,6 +46,7 @@ public class View extends JFrame {
      * then obtains the data from the Model, and presents data visually through 
      * the View for the user to see.
      ***************************************************************************/
+    
     public int getFirstNum() {
         return Integer.parseInt(firstNum.getText());
     }
