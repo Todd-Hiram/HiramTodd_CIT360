@@ -27,7 +27,7 @@ public class javaCollections {
         /*******************************************************************
          * Also occasionally called a sequence, this is an ordered list that can
          * contain duplicate elements and allows control over where the elements
-         * can be inserted and can be accessed using integer indexing.
+         * can be inserted and can be accessed using integer indexing. 
          *******************************************************************/
         System.out.println("\n List Collection Example");
         System.out.println("\n List of favorite destinations: ");
@@ -41,8 +41,9 @@ public class javaCollections {
         
         // Map Collection
         /*******************************************************************
-         * Map is an object that maps keys to values. One key, one value. 
-         * There is no duplicating.
+         * Map is an object that maps unique keys to values, and a key is an 
+         * object that retrieves a value at another time. There are no duplicate 
+         * keys, One key, one value.
          *******************************************************************/
         System.out.println("\n Map Collection Example");
         System.out.println("\n Names with Nicknames: ");
@@ -59,7 +60,9 @@ public class javaCollections {
         // TreeSet Collection
         /*******************************************************************
          * TreeSet provides good storage in sorted and ascending order. 
-         * The elements are also sorted by keys (indexing).
+         * The elements are also sorted by keys (indexing). TreeSet is used quite
+         * often because of its quick access and retrieval time, especially when 
+         * it comes to storing large amounts of sorted information. 
          *******************************************************************/
         System.out.println("TreeSet Collection Example");
         System.out.println("Classic Disney characters: ");
@@ -79,7 +82,8 @@ public class javaCollections {
         
         // Set deonstration using HashSet
         /*******************************************************************
-        * Set is an unordered collection of objects and duplicates are not seen.
+        * Set is an unordered collection of unique objects and duplicates 
+        * are not seen. The Set collection cannot hold two equal objects.
         *******************************************************************/
         System.out.println("Set Collection Example");
         System.out.print("Set output without the duplicates: "); 
@@ -99,10 +103,13 @@ public class javaCollections {
         System.out.println(tree_Set);
         
         // Queue deonstration using HashSet
-        /*******************************************************************
+        /********************************************************************
         * Queue collection holds the elements that will soon be processed and 
         * also provides other operations such as Insert, Remove, and Examine.
-        *******************************************************************/
+        * Queue has two sides. Entries are added at the bottom of the entry 
+        * and then removed from the top of the Queue. Often described as first
+        * in, first out.
+        ********************************************************************/
         Queue<Integer> q = new LinkedList<>(); 
   
         // Adds elements to queue 
