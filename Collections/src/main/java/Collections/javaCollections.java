@@ -29,15 +29,15 @@ public class javaCollections {
          * contain duplicate elements and allows control over where the elements
          * can be inserted and can be accessed using integer indexing. 
          *******************************************************************/
-        System.out.println("\n List Collection Example");
-        System.out.println("\n List of favorite destinations: ");
+        System.out.println("List Collection Example");
+        System.out.println("List of favorite destinations: ");
         List<String> funList = new ArrayList<>();
         funList.add("Disneyland");
         funList.add("\n Laguna Beach");
         funList.add("\n Chiang Mai");
         funList.add("\n New York City");
         funList.add("\n Tokyo");
-        System.out.println(funList);
+        System.out.println(funList + "\n");
         
         // Map Collection
         /*******************************************************************
@@ -45,8 +45,8 @@ public class javaCollections {
          * object that retrieves a value at another time. There are no duplicate 
          * keys, One key, one value.
          *******************************************************************/
-        System.out.println("\n Map Collection Example");
-        System.out.println("\n Names with Nicknames: ");
+        System.out.println("Map Collection Example");
+        System.out.println("Names with Nicknames: ");
         Map<String, String> mapNickNames = new LinkedHashMap<>();
         mapNickNames.put("Peter", "Preisthood");
         mapNickNames.put("\n Michael", "Mickey");
@@ -55,7 +55,7 @@ public class javaCollections {
         mapNickNames.put("\n Julian", "Julie");
         mapNickNames.put("\n Stewart", "Stu");
         mapNickNames.put("\n Logan", "Rogain");
-        System.out.println(mapNickNames);
+        System.out.println(mapNickNames + "\n");
         
         // TreeSet Collection
         /*******************************************************************
@@ -67,12 +67,12 @@ public class javaCollections {
         System.out.println("TreeSet Collection Example");
         System.out.println("Classic Disney characters: ");
         TreeSet DisneyChar = new TreeSet();
-        DisneyChar.add("\n Mickey Mouse");
-        DisneyChar.add("\n Minnie Mouse");
-        DisneyChar.add("\n Donald Duck");
-        DisneyChar.add("\n Daisy Duck");
-        DisneyChar.add("\n Goofy");
-        DisneyChar.add("\n Pluto");
+        DisneyChar.add("Mickey Mouse");
+        DisneyChar.add("Minnie Mouse");
+        DisneyChar.add("Donald Duck");
+        DisneyChar.add("Daisy Duck");
+        DisneyChar.add("Goofy");
+        DisneyChar.add("Pluto" + "\n");
         
         Iterator list = DisneyChar.iterator();
         while(list.hasNext()) {
@@ -80,29 +80,31 @@ public class javaCollections {
         System.out.print(element + "\n");
         }
         
-        // Set deonstration using HashSet
+        // Set demonstration using HashSet and TreeSet
         /*******************************************************************
         * Set is an unordered collection of unique objects and duplicates 
         * are not seen. The Set collection cannot hold two equal objects.
         *******************************************************************/
         System.out.println("Set Collection Example");
-        System.out.print("Set output without the duplicates: "); 
+        System.out.print("My favorite States: "); 
         
         Set<String> setCol = new HashSet<String>(); 
         setCol.add("\n Alabama"); 
         setCol.add("\n Colorado"); 
-        setCol.add("\n Phoenix"); 
+        setCol.add("\n Arizona"); 
         setCol.add("\n Idaho"); 
         setCol.add("\n Colorado"); 
   
-        System.out.println(setCol); 
+        System.out.println(setCol + "\n"); 
   
-        // Set using TreeSet 
-        System.out.print("Set sorted using TreeSet: "); 
+        /*TreeSet is used here to organized the set in alphabetical order and 
+        still ingnores the Colorado duplicate.*/
+        System.out.print("Set sorted using TreeSet" + "\n"); 
+        System.out.print("My Favorite States in Alaphabetical order: "); 
         Set<String> tree_Set = new TreeSet<String>(setCol); 
         System.out.println(tree_Set);
         
-        // Queue deonstration using HashSet
+        // Queue demonstration with LinkedList
         /********************************************************************
         * Queue collection holds the elements that will soon be processed and 
         * also provides other operations such as Insert, Remove, and Examine.
@@ -117,17 +119,17 @@ public class javaCollections {
         q.add(i); 
 
         // Display the queue. 
-        System.out.println("Queued values: "+q); 
+        System.out.println("Queued values: " + q + "\n"); 
 
         // Remove the beginning value. 
         int remVal = q.remove(); 
-        System.out.println("Values removed: " + remVal); 
+        System.out.println("Values removed: " + remVal + "\n"); 
 
         System.out.println(q); 
 
         // View the head of queue 
         int headVal = q.peek(); 
-        System.out.println("Head of queue: " + headVal); 
+        System.out.println("Head of queue: " + headVal + "\n"); 
 
         // Display the number or size of queue.
         int size = q.size(); 
