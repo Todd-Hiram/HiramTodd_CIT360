@@ -14,3 +14,6 @@
         </session-timeout>
     </session-config>
 </web-app>
+
+<!--This file is called a web application deployment desciptor and it defines the 
+mapping between the URL and servlet class-->
