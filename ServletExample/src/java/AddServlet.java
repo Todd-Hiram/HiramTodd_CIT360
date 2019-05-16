@@ -18,6 +18,10 @@ import javax.servlet.http.HttpServletResponse;
 public class AddServlet extends HttpServlet {
 
     /**
+     * This is the program's Java class that processes the values that were 
+     * inputted by the user performs the addition of the two values and gives the 
+     * result.
+     * 
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
      *
