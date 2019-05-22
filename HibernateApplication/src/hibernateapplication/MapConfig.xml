@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<!--
+This file is how Hibernate is instructed to map the application's defined class or
+classes such as EmployeeIDClass and HibernateApplication and tie into the database 
+tables within newSQLTemplare.
+-->
+
+<hibernate-mapping>
+    <class name="EmployeeIDClass" table = "EMPLOYEE">
+        <meta attribute="class-description">
+            Employee details.
+        </meta>
+        
+        <id name="id" type="int" column="id">
+            <generator class="native"/>
+        </id>
+        
+        <property name="fName" column="first_name" type="string"/>
+        <property name="lName" column="last_name" type="string" />
+        <property name="salary" column="salary" type="int" />
+    </class>
+</hibernate-mapping>
