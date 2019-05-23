@@ -7,6 +7,8 @@
 /**
  * Author:  hiramtodd
  * Created: May 18, 2019
+ *
+ * Here is where we create a table in the database. 
  */
 
 CREATE TABLE employee(
