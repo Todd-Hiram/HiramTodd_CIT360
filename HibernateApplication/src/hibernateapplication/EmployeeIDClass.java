@@ -5,6 +5,8 @@
  */
 package hibernateapplication;
 
+import javax.persistance.*;
+
 /**
  * @author hiramtodd
  * 
@@ -14,18 +16,36 @@ package hibernateapplication;
  * This object will correspond with this application's database table created in 
  * SQL.
  */
+//public class EmployeeIDClass {
+//    private int id;
+//    private String fName;
+//    private String lName;
+//    private int salary;
+//
+//    public EmployeeIDClass(String firstName, String lastName, int salary) {
+//        this.fName = firstName;
+//        this.lName = lastName;
+//        this.salary = salary;
+//    }
+
+@Entity
+@Table(name = "newSQLTemplate")
 public class EmployeeIDClass {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private int id;
-    private String fName;
-    private String lName;
+
+    @Column(name = "first_name")
+    private int first_name;
+
+    @Column(name = "last_name")
+    private int last_name;
+
+    @Column(name = "salary")
     private int salary;
-    
-    public EmployeeIDClass(String firstName, String lastName, int salary) {
-        this.fName = firstName;
-        this.lName = lastName;
-        this.salary = salary;
-    }
-    
+
     public int getId() {
         return id;
     }
