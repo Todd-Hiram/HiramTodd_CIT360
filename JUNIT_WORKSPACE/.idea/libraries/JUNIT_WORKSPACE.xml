@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="JUNIT_WORKSPACE">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/JUNIT_WORKSPACE.iml" />
+      <root url="jar://$PROJECT_DIR$/junit-4.13-beta-3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/JUNIT_WORKSPACE.iml" recursive="false" />
+  </library>
+</component>

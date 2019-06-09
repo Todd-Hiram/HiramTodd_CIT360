@@ -24,16 +24,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1d2657c-02e9-46af-8310-276eaa62f138" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Counter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThreadsExecutorsRunnables3/.idea/markdown-navigator/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThreadsExecutorsRunnables3/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThreadsExecutorsRunnables3/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HibernateApplication/src/hibernateapplication/EmployeeIDClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HibernateApplication/src/hibernateapplication/EmployeeIDClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HibernateApplication/src/hibernateapplication/MapConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Servlets/src/main/java/com/mycompany/servlets/NewServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Servlets/src/main/java/com/mycompany/servlets/ServletMain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Servlets/src/main/webapp/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Counter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="30" column="59" lean-forward="true" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+            <state relative-caret-position="174">
+              <caret line="12" column="66" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
               <folding>
                 <element signature="e#746#747#0" expanded="true" />
                 <element signature="e#776#777#0" expanded="true" />
@@ -96,8 +88,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1898" />
-    <option name="y" value="83" />
+    <option name="x" value="18" />
+    <option name="y" value="80" />
     <option name="width" value="1878" />
     <option name="height" value="957" />
   </component>
@@ -106,17 +98,13 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane" />
-      <pane id="Course" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -161,7 +149,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1898" y="83" width="1878" height="957" extended-state="0" />
+    <frame x="18" y="80" width="1878" height="957" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.14215687" />
@@ -186,6 +174,7 @@
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="TeamCity" order="12" />
       <window_info anchor="bottom" id="Messages" order="13" />
+      <window_info anchor="right" id="Codota" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -252,8 +241,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Counter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="30" column="59" lean-forward="true" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+        <state relative-caret-position="174">
+          <caret line="12" column="66" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
           <folding>
             <element signature="e#746#747#0" expanded="true" />
             <element signature="e#776#777#0" expanded="true" />
