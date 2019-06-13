@@ -1,4 +1,4 @@
-package JunitExample;
+package junitexample;
 
 import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.assertThat;
@@ -40,7 +40,7 @@ class TestRunner {
 	}
 
 	/**
-         * assertArrayEquals
+         * assertArrayEquals test
          * skyrimArray
          * 
          * This block matches one array with another, like we have below. If one
@@ -74,7 +74,7 @@ class TestRunner {
 	}
         
 	/**
-         * assertFalse
+         * assertFalse test
          * greaterThan
          * 
          * This block creates a new instance of JUnitboolean to test that the 
@@ -144,11 +144,11 @@ class TestRunner {
 		assertNull(JUnitFallCourses.FallCourses("CIT360"));
 	}
         
-        	/**
-         * assertTrue
-         * lessThan
-         * 
-         * Here we are creating a new instance
+	/**
+	 * assertTrue
+	 * lessThan
+     *
+     * Here we are creating a new instance
 	 * of our JunitlessThanboolean to check
 	 * and make sure that number1 is less than number2
 	 * it is pulling this information from out lessThan
@@ -161,7 +161,7 @@ class TestRunner {
 	}
         
 	/**
-         * Here we are testing to make sure that the
+	 * Here we are testing to make sure that the
 	 * two value salesPrice and homeAppraisal 
 	 * are the same. If they are not the same
 	 * the test will fail. We want to make 
@@ -181,7 +181,7 @@ class TestRunner {
 
 	
 	/**
-         * Here we are testing to make sure that the
+	 * Here we are testing to make sure that the
 	 * two parameters are the same.If they are not
 	 * the same, the test will fail.
          **/

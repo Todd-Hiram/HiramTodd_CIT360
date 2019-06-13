@@ -1,4 +1,4 @@
-package JunitExample;
+package junitexample;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -17,20 +17,20 @@ import java.util.Map;
 public class JunitExample {
 
 	/**
-         * assertEquals test
-         * addNumbers
-         * 
-         * This block will return with the sum of two numbers into the ints and
-         * pass them into the method which will then return the sum.
-         **/
+     * assertEquals test
+     * addNumbers
+     * 
+     * This block will return with the sum of two numbers into the ints and
+     * pass them into the method which will then return the sum.
+     **/
 	public int addNumbers(int number1, int number2) {
 		return number1 + number2;	
 	}
 	
 	/**
-         * assertArrayEquals
-         * skyrimArray
-         * 
+     * assertArrayEquals
+     * skyrimArray
+	 *
 	 * Here we are creating an ArrayList of all
 	 * the cities of Skyrim. After the list is 
 	 * created, we will return the contents.
@@ -41,13 +41,13 @@ public class JunitExample {
 	}
         
 	/**
-         * assertFalse
-         * greaterThan
-         * 
-         * This method is set up to be tested by JUnit in order to make sure that
-         * number1 is greater than number2, and that the return is true. If not, 
-         * then method will returns false.
-         **/
+    * assertFalse
+    * greaterThan
+    * 
+    * This method is set up to be tested by JUnit in order to make sure that
+    * number1 is greater than number2, and that the return is true. If not, 
+    * then method will returns false.
+    **/
 	public boolean greaterThan(int number1,int number2) {
 		if (number1 > number2){
 			return true; 
@@ -57,13 +57,13 @@ public class JunitExample {
 	}
 	
 	/**
-         * assertNotNull
-         * SkyrimJarl
-         * 
-         * This block is a hash map of all the Jarls (Rulers) of Skyrim and the 
-         * cities they rule. The city is the acting key in this hash map when it 
-         * comes to testing.
-         **/
+    * assertNotNull
+    * SkyrimJarl
+    * 
+    * This block is a hash map of all the Jarls (Rulers) of Skyrim and the 
+    * cities they rule. The city is the acting key in this hash map when it 
+    * comes to testing.
+    **/
 	public String SkyrimJarl(final String key) {
             
 		Map<String, String> SkyrimJarl=new HashMap<>();
@@ -81,13 +81,13 @@ public class JunitExample {
 	}
         
 	/**
-         * assertNotSame
-         * SpringCourses
-         * 
-         * This block is another Hash Map and it is of the courses I have left 
-         * before I graduate. The key this time is the course code, and following 
-         * after are the reference courses.
-         **/
+    * assertNotSame
+    * SpringCourses
+    * 
+    * This block is another Hash Map and it is of the courses I have left 
+    * before I graduate. The key this time is the course code, and following 
+    * after are the reference courses.
+    **/
 	public String SpringCourses(final String key) {
             
 		Map<String,String> SpringCourses=new HashMap<>();
@@ -100,14 +100,14 @@ public class JunitExample {
 	}
         
 	/**
-         * AssertNull
-         * FallCourses
-         * 
-	 * Here are are creating a hashmap of the courses I 
-	 * will be taking in the fall. the key is the
-	 * course code and each course code has a course
-	 * description.
-         **/
+    * AssertNull
+    * FallCourses
+    * 
+	* Here are are creating a hashmap of the courses I 
+	* will be taking in the fall. the key is the
+	* course code and each course code has a course
+	* description.
+    **/
 	public String FallCourses(final String key) {
             
 		Map<String,String> FallCourses=new HashMap<>();
@@ -121,19 +121,19 @@ public class JunitExample {
 	}
 
 	/**
-         * assertTrue
-         * lessThan
-         * 
-	 * Here we are making sure that number one is
-	 * less than number two. If is is the case then
-	 * the method will return true. If number 1 is
-	 * not less than number 2 then the method will
-	 * return false.
-         **/
+    * assertTrue
+    * lessThan
+    * 
+	* Here we are making sure that number one is
+	* less than number two. If is is the case then
+	* the method will return true. If number 1 is
+	* not less than number 2 then the method will
+	* return false.
+    **/
 	public boolean lessThan(int number1,int number2) {
 		if (number1<number2){
 			return true; 
-		}else {
+		} else {
 			return false;
 		}
 	}
