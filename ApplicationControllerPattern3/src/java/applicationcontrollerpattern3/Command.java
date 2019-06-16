@@ -15,6 +15,5 @@ public interface Command {
     
     String execute(RequestContext requestContext);
 
-    public String execute(applicationcontrollerpattern3.RequestContext requestContext);
     
 }
