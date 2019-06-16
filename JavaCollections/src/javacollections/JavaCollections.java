@@ -210,6 +210,8 @@ public class JavaCollections {
         fruits.add("Apple");
         fruits.add("Pineapple");
         fruits.add("Orange");
+        fruits.add("Peach");
+        fruits.add("Mango");
         
         // Returns the first (lowest) element currently in this set
         String first = fruits.first();
@@ -223,7 +225,7 @@ public class JavaCollections {
         // if this set uses the natural ordering of its elements
         Comparator<?> comparator = fruits.comparator();
         
-        SortedSet<String> tailSet = fruits.tailSet("Orange");
+        SortedSet<String> tailSet = fruits.tailSet("Pineapple");
         System.out.println("tailSet: " + tailSet);
         
         // https://www.javaguides.net/2018/08/collection-framework-the-sortedset-interface.html
