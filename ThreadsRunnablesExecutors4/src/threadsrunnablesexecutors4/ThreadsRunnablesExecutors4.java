@@ -33,16 +33,16 @@ public class ThreadsRunnablesExecutors4 {
         * the tasks is completed by a Thread, another task will be selected from the 
         * queue by this Thread and executed.
         **/
-//        final ExecutorService executorService = Executors.newFixedThreadPool(2);
-//        executorService.execute(new Task());
-//        executorService.execute(new Task());
-//        executorService.execute(new Task());
-//        executorService.execute(new Task());
-//        executorService.execute(new Task());
-//  
-//        executorService.shutdown();
-//  
-//        System.out.println("Thread main finished");
+        final ExecutorService executorService = Executors.newFixedThreadPool(2);
+        executorService.execute(new Task());
+        executorService.execute(new Task());
+        executorService.execute(new Task());
+        executorService.execute(new Task());
+        executorService.execute(new Task());
+  
+        executorService.shutdown();
+  
+        System.out.println("Thread main finished");
           
           
           
@@ -57,42 +57,42 @@ public class ThreadsRunnablesExecutors4 {
         * and the Thread will execute it.
         **/
 
-//        Runnable task1 = () -> {
-//             System.out.println("Executing Task1 inside : " + Thread.currentThread().getName());
-//             try {
-//                 TimeUnit.SECONDS.sleep(2);
-//            } catch (InterruptedException ex) {
-//                 throw new IllegalStateException(ex);
-//            }
-//        };
-//
-//        Runnable task2 = () -> {
-//             System.out.println("Executing Task2 inside : " + Thread.currentThread().getName());
-//             try {
-//                  TimeUnit.SECONDS.sleep(4);
-//             } catch (InterruptedException ex) {
-//                  throw new IllegalStateException(ex);
-//             }
-//        };
-//
-//        Runnable task3 = () -> {
-//             System.out.println("Executing Task3 inside : " + Thread.currentThread().getName());
-//            try {
-//                 TimeUnit.SECONDS.sleep(3);
-//            } catch (InterruptedException ex) {
-//                 throw new IllegalStateException(ex);
-//            }
-//       };
-//        
-//       final ExecutorService executorService = Executors.newSingleThreadExecutor();
-//       System.out.println("Submitting the tasks for execution...");
-//       executorService.submit(task1);
-//       executorService.submit(task2);
-//       executorService.submit(task3);
-//
-//       executorService.shutdown();
-//
-//       System.out.println("Thread main finished");
+        Runnable task1 = () -> {
+             System.out.println("Executing Task1 inside : " + Thread.currentThread().getName());
+             try {
+                 TimeUnit.SECONDS.sleep(2);
+            } catch (InterruptedException ex) {
+                 throw new IllegalStateException(ex);
+            }
+        };
+
+        Runnable task2 = () -> {
+             System.out.println("Executing Task2 inside : " + Thread.currentThread().getName());
+             try {
+                  TimeUnit.SECONDS.sleep(4);
+             } catch (InterruptedException ex) {
+                  throw new IllegalStateException(ex);
+             }
+        };
+
+        Runnable task3 = () -> {
+             System.out.println("Executing Task3 inside : " + Thread.currentThread().getName());
+            try {
+                 TimeUnit.SECONDS.sleep(3);
+            } catch (InterruptedException ex) {
+                 throw new IllegalStateException(ex);
+            }
+       };
+        
+       final ExecutorService executorService = Executors.newSingleThreadExecutor();
+       System.out.println("Submitting the tasks for execution...");
+       executorService.submit(task1);
+       executorService.submit(task2);
+       executorService.submit(task3);
+
+       executorService.shutdown();
+
+       System.out.println("Thread main finished");
        
        
        
@@ -108,57 +108,57 @@ public class ThreadsRunnablesExecutors4 {
         * from the cache. Pools, if in idle for a long period of time, will not consume
         * any resources.
         **/       
-//        Runnable task1 = () -> {
-//            
-//             System.out.println("Executing Task1 inside : " + Thread.currentThread().getName());
-//             try {
-//                 
-//                  TimeUnit.SECONDS.sleep(2);
-//                  
-//             } catch (InterruptedException ex) {
-//                 
-//                  throw new IllegalStateException(ex);
-//                  
-//             }
-//        };
-//
-//        Runnable task2 = () -> {
-//            
-//             System.out.println("Executing Task2 inside : " + Thread.currentThread().getName());
-//             try {
-//                 
-//                  TimeUnit.SECONDS.sleep(4);
-//                  
-//             } catch (InterruptedException ex) {
-//                 
-//                  throw new IllegalStateException(ex);
-//                  
-//             }
-//       };
-//
-//        Runnable task3 = () -> {
-//            
-//            System.out.println("Executing Task3 inside : " + Thread.currentThread().getName());
-//            try {
-//                
-//                 TimeUnit.SECONDS.sleep(3);
-//                 
-//            } catch (InterruptedException ex) {
-//                
-//                 throw new IllegalStateException(ex);
-//                 
-//            }
-//        };
-//           
-//        final ExecutorService executorService = Executors.newCachedThreadPool();
-//        System.out.println("Submitting the tasks for execution...");
-//        executorService.submit(task1);
-//        executorService.submit(task2);
-//        executorService.submit(task3);
-//
-//        executorService.shutdown();
-//
-//        System.out.println("Thread main finished
+        Runnable task1 = () -> {
+            
+             System.out.println("Executing Task1 inside : " + Thread.currentThread().getName());
+             try {
+                 
+                  TimeUnit.SECONDS.sleep(2);
+                  
+             } catch (InterruptedException ex) {
+                 
+                  throw new IllegalStateException(ex);
+                  
+             }
+        };
+
+        Runnable task2 = () -> {
+            
+             System.out.println("Executing Task2 inside : " + Thread.currentThread().getName());
+             try {
+                 
+                  TimeUnit.SECONDS.sleep(4);
+                  
+             } catch (InterruptedException ex) {
+                 
+                  throw new IllegalStateException(ex);
+                  
+             }
+       };
+
+        Runnable task3 = () -> {
+            
+            System.out.println("Executing Task3 inside : " + Thread.currentThread().getName());
+            try {
+                
+                 TimeUnit.SECONDS.sleep(3);
+                 
+            } catch (InterruptedException ex) {
+                
+                 throw new IllegalStateException(ex);
+                 
+            }
+        };
+           
+        final ExecutorService executorService = Executors.newCachedThreadPool();
+        System.out.println("Submitting the tasks for execution...");
+        executorService.submit(task1);
+        executorService.submit(task2);
+        executorService.submit(task3);
+
+        executorService.shutdown();
+
+        System.out.println("Thread main finished
         
 
         /**
