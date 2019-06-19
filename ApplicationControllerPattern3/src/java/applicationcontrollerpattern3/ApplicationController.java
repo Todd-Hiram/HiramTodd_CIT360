@@ -33,16 +33,16 @@ public class ApplicationController {
     }
 }
 
-public class CommandHelper {
-
-    public Command getCommand(String uri) {
-
-        Command command = null;
-        if (uri.contains("studentView.do")) {
-            command = new StudentViewCommand();
-        }
-
-        return command;
-    }
-
-}
+//public class CommandHelper {
+//
+//    public Command getCommand(String uri) {
+//
+//        Command command = null;
+//        if (uri.contains("studentView.do")) {
+//            command = new StudentViewCommand();
+//        }
+//
+//        return command;
+//    }
+//
+//}
