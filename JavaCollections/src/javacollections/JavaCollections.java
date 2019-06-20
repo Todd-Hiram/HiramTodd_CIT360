@@ -60,7 +60,7 @@ public class JavaCollections {
         
 
         sortedMap = fileExtensions.headMap("java");
-        System.out.println("headMap : " + sortedMap);
+        System.out.println("headMap : " + sortedMap + "\n");
         // https://www.javaguides.net/2018/08/collections-framework-the-sortedmap-interface.html
         
         
@@ -80,11 +80,11 @@ public class JavaCollections {
         numberMapping.put("Two", 2);
         numberMapping.put("Three", 3);
         
-        // Add new key-value pair only if the kwy does not exist in the HashMap, 
+        // Add new key-value pair only if the key does not exist in the HashMap, 
         // or is mapped to 'null'
         numberMapping.putIfAbsent("Four", 4);
         
-        System.out.println(numberMapping);
+        System.out.println(numberMapping + "\n");
         // https://www.javaguides.net/2018/08/collections-framework-the-map-interface.html
     
         
@@ -111,7 +111,7 @@ public class JavaCollections {
         // deque.poll();
         // deque.pollFirst();//it is same as poll()
         deque.pollLast();
-        System.out.println("After pollLast() Traversal...");
+        System.out.println("After pollLast() Traversal..." + "\n");
         for (String s : deque) {
          System.out.println(s);
         }
@@ -161,7 +161,7 @@ public class JavaCollections {
         // Get the element at the front of the Queue without removing it using peek()
         // The peek() method is similar to element() except that it returns null if the Queue is empty
         firstElementInTheWaitingQueue = elementQueue.peek();
-        System.out.println("Waiting Queue : " + firstElementInTheWaitingQueue);
+        System.out.println("Waiting Queue : " + firstElementInTheWaitingQueue + "\n");
         
         // https://www.javaguides.net/2018/08/collections-framework-queue-interface.html
         
@@ -186,7 +186,7 @@ public class JavaCollections {
         disneyCharacters.add("Donald");
         disneyCharacters.add("Goofey");
         disneyCharacters.add("Pluto");
-        System.out.println(disneyCharacters);
+        System.out.println(disneyCharacters + "\n");
         
         // https://www.javaguides.net/2018/08/collections-framework-the-list-interface.html
         
@@ -226,7 +226,7 @@ public class JavaCollections {
         Comparator<?> comparator = fruits.comparator();
         
         SortedSet<String> tailSet = fruits.tailSet("Pineapple");
-        System.out.println("tailSet: " + tailSet);
+        System.out.println("tailSet: " + tailSet + "\n");
         
         // https://www.javaguides.net/2018/08/collection-framework-the-sortedset-interface.html
         
@@ -257,7 +257,7 @@ public class JavaCollections {
         
         // Adding duplicate elements will be ignored
         daysOfWeek.add("Monday");
-        System.out.println(daysOfWeek);
+        System.out.println(daysOfWeek + "\n");
         
         // https://www.javaguides.net/2018/08/collections-framework-the-set-interface.html
         
@@ -282,6 +282,7 @@ public class JavaCollections {
         System.out.println(animals);
         
         String[] arrayOfAnimals = new String[4];
+        
         System.out.println(arrayOfAnimals.length);
         arrayOfAnimals[0] = "Lion";
         arrayOfAnimals[1] = "Tiger";

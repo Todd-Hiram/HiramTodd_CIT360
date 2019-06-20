@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/HiramTodd_CIT360.iml" filepath="$PROJECT_DIR$/HiramTodd_CIT360.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Json_GsonApp.iml" filepath="$PROJECT_DIR$/Json_GsonApp.iml" />
     </modules>
   </component>
 </project>
