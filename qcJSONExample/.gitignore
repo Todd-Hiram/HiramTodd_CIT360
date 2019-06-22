@@ -1,0 +1,7 @@
+/bin/
+
+
+## Team Essentials ##
+#####################
+.vscode/settings.json
+.vscode/team-essentials/state.json
