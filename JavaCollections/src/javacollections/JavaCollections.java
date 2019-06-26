@@ -40,6 +40,7 @@ public class JavaCollections {
          * TreeSet implementation class. We have firstKey(), lastKey(), 
          * tailMap(String fromKey), and headMap(String toKey).
          **/
+        System.out.println("*** SortedMap Interface ***");
         // We create a TreeMap
         SortedMap<String, String> fileExtensions = new TreeMap<>();
         
@@ -72,6 +73,7 @@ public class JavaCollections {
          * 
          * This is an example of Map interface with it's implementation class - HashMap 
          **/
+        System.out.println("*** Map Interface ***");
         // Create a HashMap
         Map<String, Integer> numberMapping = new HashMap<>();
         
@@ -98,6 +100,7 @@ public class JavaCollections {
          * elements that supports the insertion and removal of elements at both the
          * end points.
          **/
+        System.out.println("*** Deque Interface ***");
         Deque<String> deque = new ArrayDeque<String>();
         deque.offer("element1");
         deque.offer("element2");
@@ -113,7 +116,7 @@ public class JavaCollections {
         deque.pollLast();
         System.out.println("After pollLast() Traversal..." + "\n");
         for (String s : deque) {
-         System.out.println(s);
+         System.out.println(s + "\n");
         }
         // https://www.javaguides.net/2018/08/collections-framework-the-deque-interface.html
         
@@ -130,6 +133,7 @@ public class JavaCollections {
          * for an element in a Queue, and gets the element at the front of the Queue
          * without removing it.
          **/
+        System.out.println("*** Queue Interface ***");
         Queue<String> elementQueue = new LinkedList<>();
         
         elementQueue.add("element1");
@@ -164,31 +168,8 @@ public class JavaCollections {
         System.out.println("Waiting Queue : " + firstElementInTheWaitingQueue + "\n");
         
         // https://www.javaguides.net/2018/08/collections-framework-queue-interface.html
+
         
-        
-        
-        /**
-         * List Interface
-         * 
-         * The List interface lists are zero-based index. The elements of the list
-         * can be accessed using an integer index - get() API. This is an ordered
-         * collection (also known as a sequence) and guarantees an insertion order.
-         * A user using this interface has complete control over where in the list
-         * each element is inserted. 
-         * 
-         * This is a simple List interface demonstration using ArrayList implementation class. 
-         **/
-        // Create an ArrayList of String using
-        List<String> disneyCharacters = new ArrayList<>();
-        
-        // Adding new elements to the ArrayList
-        disneyCharacters.add("Mickey");
-        disneyCharacters.add("Donald");
-        disneyCharacters.add("Goofey");
-        disneyCharacters.add("Pluto");
-        System.out.println(disneyCharacters + "\n");
-        
-        // https://www.javaguides.net/2018/08/collections-framework-the-list-interface.html
         
         
         /**
@@ -202,6 +183,7 @@ public class JavaCollections {
          * Comparator access which returns the Comparator, if any, used to sort the
          * set.
          **/
+        System.out.println("*** SortedSet Interface ***");
         // Create a TreeSet
         SortedSet<String> fruits = new TreeSet();
         
@@ -233,6 +215,34 @@ public class JavaCollections {
         
         
         /**
+         * List Interface
+         * 
+         * The List interface lists are zero-based index. The elements of the list
+         * can be accessed using an integer index - get() API. This is an ordered
+         * collection (also known as a sequence) and guarantees an insertion order.
+         * A user using this interface has complete control over where in the list
+         * each element is inserted. 
+         * 
+         * This is a simple List interface demonstration using ArrayList implementation class. 
+         **/
+        System.out.println("*** List Interface ***");
+        // Create an ArrayList of String using
+        List<String> disneyCharacters = new ArrayList<>();
+        
+        // Adding new elements to the ArrayList
+        disneyCharacters.add("Mickey");
+        disneyCharacters.add("Donald");
+        disneyCharacters.add("Goofey");
+        disneyCharacters.add("Pluto");
+        disneyCharacters.add("Goofey");
+        System.out.println(disneyCharacters + "\n");
+        
+        // https://www.javaguides.net/2018/08/collections-framework-the-list-interface.html
+        
+        
+       
+        
+        /**
          * Set Interface
          * 
          * Set interface only contains unique elements and no duplicates will display,
@@ -241,28 +251,54 @@ public class JavaCollections {
          * abstraction, no insertion order guarantee, and adds stronger contract on
          * the behavior of equals and hashCode operations, allowing Set instances 
          * to be compared meaningfully even if their implementation types vary. If
-         * the elements are the same then the two instances are equal.
+         * the elements are the same then the two instances are equal. 
+         * 
+         * Also, Set interface only contains unique elements and will not allow 
+         * duplicates. If a duplicate is added, it will not display.
          **/
         // Create a HashSet
-        Set<String> daysOfWeek = new HashSet<>();
-        
+        Set<String> uniques = new HashSet<String>();
+        Set<String> dups    = new HashSet<String>();
+
         // Adding new elements to the HashSet
-        daysOfWeek.add("Monday");
-        daysOfWeek.add("Tuesday");
-        daysOfWeek.add("Wednesday");
-        daysOfWeek.add("Thursday");
-        daysOfWeek.add("Friday");
-        daysOfWeek.add("Saturday");
-        daysOfWeek.add("Sunday");
+        uniques.add("Monday");
+        uniques.add("Tuesday");
+        uniques.add("Wednesday");
+        uniques.add("Thursday");
+        uniques.add("Friday");
+        uniques.add("Saturday");
+        uniques.add("Sunday");
         
         // Adding duplicate elements will be ignored
-        daysOfWeek.add("Monday");
-        System.out.println(daysOfWeek + "\n");
+        uniques.add("Monday");
+
+        for(String a : uniques) {
+            if (!uniques.add(a)) {
+                dups.add(a);
+            }
+
+            // This prints the seven days of the week
+            System.out.println(uniques);
+            // This prints the length of the elements without the duplicate
+            System.out.println(uniques.size() + "\n");
+
+            // Destructive set-difference
+            uniques.removeAll(dups);
+
+            // Prints the unique days of the week
+            System.out.println("Unique words: " + uniques);
+            
+            // Prints the duplicates days
+            System.out.println("Duplicate words: " + dups);
+            // This prints the length of the elements without the duplicates
+            System.out.println(uniques.size());
+
+        }
         
         // https://www.javaguides.net/2018/08/collections-framework-the-set-interface.html
         
         
-        
+
         /**
          * Collection interface
          * 
@@ -271,6 +307,7 @@ public class JavaCollections {
          * Interfaces. JDK (Java Development Kit) may not provide any direct 
          * implementations for this interface but it does for the sub interfaces.
          **/
+        System.out.println("*** Collection Interface ***");
         // Creating an ArrayList of String using
         Collection <String> animals = new ArrayList<>();
         
@@ -289,9 +326,10 @@ public class JavaCollections {
         arrayOfAnimals[2] = "Gorilla";
         arrayOfAnimals[3] = "Giraffe";
         for (String string : arrayOfAnimals) {
-            System.out.println(string);
+            System.out.println(string + "\n");
         }
         
         // https://www.javaguides.net/2018/08/collections-framework-the-collection-interface.html
+
     }
 }
