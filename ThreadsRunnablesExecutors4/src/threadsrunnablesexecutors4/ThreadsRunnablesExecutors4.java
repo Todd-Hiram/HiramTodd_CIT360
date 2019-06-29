@@ -22,9 +22,8 @@ public class ThreadsRunnablesExecutors4 {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws InterruptedException, ExecutionException {
-        
 
-           System.out.println("Thread main started");
+        //   System.out.println("Thread main started");
   
         /**
         * Here we submitted 5 tasks using new 'newFixedThreadPool', which created 2 new 
@@ -33,16 +32,16 @@ public class ThreadsRunnablesExecutors4 {
         * the tasks is completed by a Thread, another task will be selected from the 
         * queue by this Thread and executed.
         **/
-        final ExecutorService executorService = Executors.newFixedThreadPool(2);
-        executorService.execute(new Task());
-        executorService.execute(new Task());
-        executorService.execute(new Task());
-        executorService.execute(new Task());
-        executorService.execute(new Task());
+//        final ExecutorService executorService = Executors.newFixedThreadPool(2);
+//        executorService.execute(new Task());
+//        executorService.execute(new Task());
+//        executorService.execute(new Task());
+//        executorService.execute(new Task());
+//        executorService.execute(new Task());
+//  
+//        executorService.shutdown();
   
-        executorService.shutdown();
-  
-        System.out.println("Thread main finished");
+        // System.out.println("Thread main finished");
           
           
           
@@ -83,7 +82,7 @@ public class ThreadsRunnablesExecutors4 {
 //                 throw new IllegalStateException(ex);
 //            }
 //       };
-//        
+//
 //       final ExecutorService executorService = Executors.newSingleThreadExecutor();
 //       System.out.println("Submitting the tasks for execution...");
 //       executorService.submit(task1);
@@ -91,8 +90,8 @@ public class ThreadsRunnablesExecutors4 {
 //       executorService.submit(task3);
 //
 //       executorService.shutdown();
-//
-//       System.out.println("Thread main finished");
+
+       // System.out.println("Thread main finished");
        
        
        
@@ -109,47 +108,47 @@ public class ThreadsRunnablesExecutors4 {
         * any resources.
         **/       
 //        Runnable task1 = () -> {
-//            
+//
 //             System.out.println("Executing Task1 inside : " + Thread.currentThread().getName());
 //             try {
-//                 
+//
 //                  TimeUnit.SECONDS.sleep(2);
-//                  
+//
 //             } catch (InterruptedException ex) {
-//                 
+//
 //                  throw new IllegalStateException(ex);
-//                  
+//
 //             }
 //        };
 //
 //        Runnable task2 = () -> {
-//            
+//
 //             System.out.println("Executing Task2 inside : " + Thread.currentThread().getName());
 //             try {
-//                 
+//
 //                  TimeUnit.SECONDS.sleep(4);
-//                  
+//
 //             } catch (InterruptedException ex) {
-//                 
+//
 //                  throw new IllegalStateException(ex);
-//                  
+//
 //             }
 //       };
 //
 //        Runnable task3 = () -> {
-//            
+//
 //            System.out.println("Executing Task3 inside : " + Thread.currentThread().getName());
 //            try {
-//                
+//
 //                 TimeUnit.SECONDS.sleep(3);
-//                 
+//
 //            } catch (InterruptedException ex) {
-//                
+//
 //                 throw new IllegalStateException(ex);
-//                 
+//
 //            }
 //        };
-//           
+//
 //        final ExecutorService executorService = Executors.newCachedThreadPool();
 //        System.out.println("Submitting the tasks for execution...");
 //        executorService.submit(task1);
@@ -158,7 +157,7 @@ public class ThreadsRunnablesExecutors4 {
 //
 //        executorService.shutdown();
 
-        // System.out.println("Thread main finished
+         // System.out.println("Thread main finished
         
 
         /**
@@ -166,27 +165,41 @@ public class ThreadsRunnablesExecutors4 {
          * Runnable, a delay value, and the unit of delay. This little application
          * executes the task after 5 seconds from the time of submission.
          **/
-//        // Create a task
-//        Runnable task1 = () -> {
-//            
-//            System.out.println("Executing the task1 at: " + new Date());
-//            
-//        };
-//
-//         // Create a task
-//        Runnable task2 = () -> {
-//            
-//            System.out.println("Executing the task2 at: " + new Date());
-//            
-//        };
-// 
-//        ScheduledExecutorService scheduledExecutorService = Executors.newScheduledThreadPool(2);
-//
-//        System.out.println("Scheduling task to run after 5 seconds... " + new Date());
-//        scheduledExecutorService.schedule(task1, 5, TimeUnit.SECONDS);
-//        scheduledExecutorService.schedule(task2, 5, TimeUnit.SECONDS);
-//
-//        scheduledExecutorService.shutdown();
+        // Create a task
+        Runnable task1 = () -> {
+
+            System.out.println("Executing the task1 at: " + new Date());
+
+        };
+
+         // Create a task
+        Runnable task2 = () -> {
+
+            System.out.println("Executing the task2 at: " + new Date());
+
+        };
+
+        ScheduledExecutorService scheduledExecutorService = Executors.newScheduledThreadPool(2);
+
+        System.out.println("Scheduling task to run after 5 seconds... " + new Date());
+        scheduledExecutorService.schedule(task1, 5, TimeUnit.SECONDS);
+        scheduledExecutorService.schedule(task2, 5, TimeUnit.SECONDS);
+
+        scheduledExecutorService.shutdown();
+        System.out.println("Thread main finished");
+
+
+
+        /**
+         * The Runnable interface are operated by any class whose instances are intended to be executed
+         * by a thread. 
+         **/
+//        System.out.println("Thread main started");
+//        
+//        final Thread thread1 = new Thread(new WorkerThread("Process data through Runnable interface"));
+//        thread1.start();
+//        thread1.setName("Demo Thread");
+//        
 //        System.out.println("Thread main finished");
         
        }
