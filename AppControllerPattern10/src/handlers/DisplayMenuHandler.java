@@ -2,10 +2,26 @@ package handlers;
 
 import java.util.HashMap;
 import java.util.Scanner;
+import java.util.logging.LogRecord;
 
-public class DisplayMenuHandler implements Handler {
+public class DisplayMenuHandler extends java.util.logging.Handler implements Handler {
 
     public DisplayMenuHandler() {
+    }
+
+    @Override
+    public void publish(LogRecord record) {
+
+    }
+
+    @Override
+    public void flush() {
+
+    }
+
+    @Override
+    public void close() throws SecurityException {
+
     }
 
     @Override

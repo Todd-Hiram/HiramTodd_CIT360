@@ -2,12 +2,13 @@ package handlers;
 
 import java.util.HashMap;
 import java.util.Scanner;
+import java.util.logging.LogRecord;
 
 import model.Book;
 import model.Genre;
 import model.Library;
 
-public class AddBookHandler implements Handler {
+public class AddBookHandler extends java.util.logging.Handler implements Handler {
 
     @Override
     public Object handleIt(HashMap<String, Object> data) {
@@ -47,5 +48,20 @@ public class AddBookHandler implements Handler {
             System.out.println("Please choose a genre from the list");
             return -1;
         }
+    }
+
+    @Override
+    public void publish(LogRecord record) {
+
+    }
+
+    @Override
+    public void flush() {
+
+    }
+
+    @Override
+    public void close() throws SecurityException {
+
     }
 }
